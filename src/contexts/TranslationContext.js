@@ -2,6 +2,8 @@ import React, { createContext } from "react";
 
 export const TranslationContext = createContext();
 
-const TranslationContextProvier = props => {};
+const TranslationContextProvider = ({ children }) => {
+  return <TranslationContextProvider>{children}</TranslationContextProvider>;
+};
 
-export default TranslationContextProvier;
+export default TranslationContextProvider;

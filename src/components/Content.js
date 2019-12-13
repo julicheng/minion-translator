@@ -2,15 +2,15 @@ import React from "react";
 import Image from "./Image";
 import Translation from "./Translation";
 import TextInput from "./TextInput";
-import TranslationContextProvier from "../contexts/TranslationContext";
+import TranslationContextProvider from "../contexts/TranslationContext";
 
 const Content = () => {
   return (
-    <TranslationContextProvier>
+    <TranslationContextProvider>
       <Image />
       <Translation />
       <TextInput />
-    </TranslationContextProvier>
+    </TranslationContextProvider>
   );
 };
 
