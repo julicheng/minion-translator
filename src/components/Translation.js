@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TranslationContext } from "../contexts/TranslationContext";
 
 const Translation = () => {
-  return <h2>translation</h2>;
+  const { translatedText, image, changeImage } = useContext(TranslationContext);
+  return (
+    <>
+      <h2>
+        {translatedText} {image}
+      </h2>
+      <button onClick={() => changeImage()}>click</button>
+    </>
+  );
 };
 
 export default Translation;
