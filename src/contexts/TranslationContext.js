@@ -3,14 +3,22 @@ import React, { createContext, useState, useEffect } from "react";
 export const TranslationContext = createContext();
 
 const TranslationContextProvider = ({ children }) => {
-  const images = [1, 2, 3, 4, 5];
-  const [image, setImage] = useState("#");
+  const images = [
+    "booya",
+    "hawaii",
+    "journey",
+    "laughing",
+    "lunch",
+    "micdrop",
+    "starfish"
+  ];
+  const [image, setImage] = useState("");
   const [inputText, setInputText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
 
-  // const changeImage = () => {
-  //   setImage(images[Math.floor(Math.random() * images.length)]);
-  // };
+  const changeImage = () => {
+    setImage(images[Math.floor(Math.random() * images.length)]);
+  };
 
   const translateText = async text => {
     try {
@@ -18,7 +26,6 @@ const TranslationContextProvider = ({ children }) => {
         `https://api.funtranslations.com/translate/minion.json?text=` + text
       );
       const data = await res.json();
-      console.log(data);
       setTranslatedText(data.contents.translated);
     } catch (error) {
       console.log(error);

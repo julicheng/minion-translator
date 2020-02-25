@@ -18,7 +18,7 @@ const TextInput = () => {
           setInputText(evt.target.value);
         }}
       ></input>
-      <button onClick={() => translateText(inputText)}>Click</button>
+      <button onClick={() => translateText(inputText)}>Translate!</button>
     </>
   );
 };

@@ -1,0 +1,45 @@
+:root {
+  --dark-blue: #0a447a;
+  --dark-yellow: #f6c517;
+  --blue: #105695;
+  --yellow: #f4de4b;
+  --light-yellow: #faf0b6;
+}
+
+* {
+  font-family: Jua;
+}
+
+.card {
+  width: 30rem;
+  margin: 3rem auto;
+  padding: 3rem 3rem;
+  color: var(--yellow);
+  border: 0.3rem solid var(--dark-blue);
+  background: var(--blue);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2rem;
+  .image-container {
+    height: 16rem;
+    overflow: hidden;
+  }
+  .card-subtitle {
+    color: var(--light-yellow);
+  }
+  input {
+    border-radius: 0.4rem;
+    box-shadow: none;
+  }
+  button {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.minion-img {
+  background: center center;
+}
+
+// button {
+//   // @include button-variant(pink, white, blue);
+// }

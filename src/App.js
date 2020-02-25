@@ -1,17 +1,20 @@
 import React from "react";
-import "./App.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
-import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.scss";
 
 const App = () => {
-  const title = "Minion Translator";
   return (
-    <>
-      <Header title={title} />
-      <Content />
-      <Footer />
-    </>
+    <div className="container">
+      <div className="card">
+        <Header
+          title="Minion Translator"
+          subtitle="Learn to speak to minions!"
+        />
+        <Content />
+      </div>
+    </div>
   );
 };
 
