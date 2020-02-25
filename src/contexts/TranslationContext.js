@@ -6,7 +6,7 @@ const TranslationContextProvider = ({ children }) => {
   const images = [1, 2, 3, 4, 5];
   const [image, setImage] = useState("#");
   const [inputText, setInputText] = useState("");
-  const [translatedText, setTranslatedText] = useState("Tesdst");
+  const [translatedText, setTranslatedText] = useState("");
 
   // const changeImage = () => {
   //   setImage(images[Math.floor(Math.random() * images.length)]);

@@ -5,7 +5,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const title = "Header";
+  const title = "Minion Translator";
   return (
     <>
       <Header title={title} />
