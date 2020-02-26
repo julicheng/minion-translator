@@ -19,27 +19,35 @@
   background: var(--blue);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2rem;
-  .image-container {
-    height: 16rem;
-    overflow: hidden;
-  }
+  // .image-container {
+  //   height: 15rem;
+  //   overflow: hidden;
+  //   border-radius: 0.4rem;
+  //   top: 10px;
+  // }
   .card-subtitle {
     color: var(--light-yellow);
   }
   input {
     border-radius: 0.4rem;
     box-shadow: none;
+    margin: 1rem 0 2rem 0;
   }
   button {
     width: 50%;
     margin: 0 auto;
+    background: var(--yellow);
+    color: var(--dark-blue);
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px gray;
+  }
+  .minion-img {
+    background: center center;
+    object-fit: cover;
+    border-radius: 0.4rem;
+  }
+
+  .translatedText {
+    margin-top: 1.5rem;
   }
 }
-
-.minion-img {
-  background: center center;
-}
-
-// button {
-//   // @include button-variant(pink, white, blue);
-// }
