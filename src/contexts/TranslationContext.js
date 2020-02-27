@@ -35,13 +35,7 @@ const TranslationContextProvider = ({ children }) => {
     }
   };
 
-  // const translateText = async text => {
-  //   const array = [1, 2, 3, 4, 5, 6];
-  //   setTranslatedText(array[Math.floor(Math.random() * array.length)]);
-  // };
-
   useEffect(() => {
-    // setImage(images[Math.floor(Math.random() * images.length)]);
     return changeImage();
   }, [translatedText]);
 
